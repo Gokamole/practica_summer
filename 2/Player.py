@@ -8,4 +8,8 @@ class Player:
         self.experience = self.experience + int(input("Кол-во опыта"))
         if self.experience >= 100:
             self.level =+ 1
-
+    
+    def show_stats(self):
+        print(self.name)
+        print(self.level)
+        print(self.experience)
