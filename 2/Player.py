@@ -1,3 +1,5 @@
+import math
+
 class Player:
     def __init__ (self,name,level,experience):
         self.name = name
@@ -31,3 +33,22 @@ class Player:
         print(self.name)
         print(self.level)
         print(self.experience)
+
+class Warrior (Player):
+    def __init__(self, name, level, experience, weapon, armor):
+        super().__init__(name, level, experience)
+        self.weapon = weapon
+        self.armor = armor
+
+    def attack(self):
+        self.damage = self.level/2 * self.weapon
+
+    def defend(self):
+        self.kd = math.log(self.experience) * self.armor
+
+    def show_info(self):
+        print(self.name)
+        print(self.level)
+        print(self.experience)
+        print(self.damage)
+        print(self.kd)

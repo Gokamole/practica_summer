@@ -1,5 +1,5 @@
 # Импорт используемых библиотек
-from statistic import Stat
+from Statistic import Stat
 
 
 # Функция main
