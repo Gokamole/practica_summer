@@ -44,7 +44,7 @@ class Warrior (Player):
         self.damage = self.level/2 * self.weapon
 
     def defend(self):
-        self.kd = math.log(int(self.experience)) * self.armor
+        self.kd = (self.experience) * self.armor
 
     def show_info(self):
         print(self.name)
