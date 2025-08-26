@@ -13,7 +13,7 @@ def menu():
 
     if choice == '1':
         Ex1 = Ex_1(5)
-        Ex1.zamer_vremeni(100)
+        Ex1.set_time(100)
     elif choice == '2':
         files = ["f1.txt", "f2.txt", "f3.txt", "f4.txt"]
         Ex2 = Ex_2(files)

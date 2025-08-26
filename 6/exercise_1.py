@@ -7,17 +7,17 @@ class Ex_1:
         self.semaphore = threading.Semaphore(threads)
         self.thread_pool = []
     
-    def vipolnenie_zadach(self, task_id):
+    def complete_tasks(self, task_id):
         with self.semaphore:
             print(f"Задача {task_id} запущена")
             time.sleep(1)  
             print(f"Задача {task_id} завершена")
     
-    def zamer_vremeni(self, num_tasks):
+    def set_time(self, num_tasks):
         start_time = time.time()
 
         for task_num in range(1, num_tasks + 1):
-            thread = threading.Thread(target=self.vipolnenie_zadach, args=(task_num,))
+            thread = threading.Thread(target=self.complete_tasks, args=(task_num,))
             thread.start()
             self.thread_pool.append(thread)
 
