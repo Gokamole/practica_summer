@@ -1,6 +1,7 @@
 from exercise_1 import Ex_1
 from exercise_2 import Ex_2
 from exercise_3 import Ex_3
+from exercise_3 import Ex3
 
 
 def menu():
@@ -20,8 +21,7 @@ def menu():
         Ex2.parallel()
         Ex2.results()
     elif choice == '3':
-        manager = Ex_3(0, 4, 3)
-        manager.Ex3()
+        Ex3()
     else:
         print("Пока в разработке")
 

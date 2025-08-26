@@ -1,7 +1,7 @@
 import asyncio
 
 class Ex_3:
-    def __init__(self, initial_value=0, num_coroutines=4, iterations=3):
+    def __init__(self, initial_value, num_coroutines, iterations):
         self.variable = initial_value
         self.lock = asyncio.Lock()
         self.num_coroutines = num_coroutines
